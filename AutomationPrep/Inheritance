@@ -1,0 +1,20 @@
+INHERITANCE
+
+It is a process of acquiring the properties(data + methods). Reusability is the main use of inheritance
+
+The one which gives - parent class
+The one which takes - child class
+
+Inheritance can be achieved by using Extends keyword
+
+Types of Inheritance:
+1. Single A->B
+2. Multiple A->B->C
+3. Multilevel A+B->C (Not Supported, however can be fixed by Interface)
+4. Hierarchial A->B, A->C, A->D
+
+Access Modifiers
+1. Default - when no access modifier is specified
+2. public -from everywhere in the program
+3. protected - within same package
+4. private - only within the class

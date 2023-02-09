@@ -1,0 +1,23 @@
+Static
+Static is a keyword which can given to any variable, method, block and class
+No object can not claim a static variable.
+The static member belongs to class instead of one particular variable
+A static member can be called without object
+The static keyword in Java is used for memory management mainly
+
+Static method
+A static method can be called in main method by using its name without creating any object
+A non static method can also call static method but a static method can not call non static method
+
+Static Block
+It is used to initialize the static variable
+Gets executed when the class is loaded i.e., it has highest precedence than main class
+A class can have any number of static blocks
+
+Static Variable
+It is common to all the instances of the class 
+Only a single copy of static variable is created and shared among all the instances of the class
+
+Static class
+A class can be made static only if it is a nested class
+

@@ -1,0 +1,9 @@
+Constructors is a block of code that initialixes the newly created object
+Constructors name should be same as class name
+Constructors can not have any return type
+A Constructor can not be a static, final or abstract
+Types of Constructors -> Default, No Arguments, Arguments
+When we don't mention any constructor, the compiler itself creates a constructor called default constructor
+No Arguments Constructor - allows us to provide some logic when object is created and it is not default constructor
+Arguments Constructor - also same as No Arguments, however we can pass arguments here
+Constructor Overloading - When we have both argument and non argument constructors in same class
