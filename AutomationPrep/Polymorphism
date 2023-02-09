@@ -1,0 +1,18 @@
+POLYMORPHISM
+Polymorphism is the capability of the method to perform different things based on the object it is acted upon
+
+Types
+ 1. Static/Compile/Method Overloading
+ 2. Dynamic/RunTime/Method Overriding
+ 
+ OverLoading
+ * The Method name should be same
+ * The arguments should be different like no of arguments, datatypes etc
+ * Happens in the same class and at compile time
+ 
+ Overriding
+ * The Method name should be different
+ * It happens when there is an inheritance
+ * When a child class wants to change few implementation or methods in the parent class, we use overriding
+ 
+ 

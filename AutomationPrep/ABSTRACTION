@@ -1,0 +1,24 @@
+ABSTRACTION
+
+Abstraction is the process of hiding the implementation details
+
+Abstraction can be achieved by 
+          1. Abstract Class (0 to 100 %)
+          2. Interface (100%)
+          
+Abstract class
+1. If a class is having an unimplemented method, then it should be declared as abstract. In other words, the abstract method should not have any implelementation
+2. If a class is declared as abstract, it may have both abstract and non abstract methods
+3. A class can be declared as abstract, even it does not have any abstract method
+4. One cannot create an object for abstract class
+5. The child class should implement all the abstract methods in the parent class. Otherwise, declare the child class as abstract also.
+
+
+Interface
+1. Interface is used to achieve 100% abstraction
+2. It is same as class whereas it only contains unimplemented or abstract method
+3. By default, the method or variable declared in the interface is always public, static and final
+4. One cannot create object for interface
+5. A class can acquire interface by using implements keywords
+6. A class can acquire more than one interface i.e., multilevel inheritance
+7. An interface can acquire another interface using extends keyword
