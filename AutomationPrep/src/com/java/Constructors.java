@@ -4,7 +4,7 @@ public class Constructors {
 
 	Constructors(){
 		
-		System.out.println("Constuctor");
+		System.out.println("Constuctors");
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
