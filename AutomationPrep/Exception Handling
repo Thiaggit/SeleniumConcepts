@@ -1,0 +1,27 @@
+EXCEPTION HANDLING
+
+An exception is an undesired or unexpected event which occurs during the execution of the program. It can be handled by our program
+An error is not an exception and it is severe. It can ot be handled
+Both exception and error are children of Throwable
+There are two types of exceptions - Checked and Unchecked exception
+Exceptions are handled by using try catch block
+
+TRY CATCH
+Try Block - block where we will write our code which cause exception
+Catch Block - This is where the exceptions are handled
+Catch block should be immediately followed by a Try block
+A Try Block may have multiple catch blocks
+If there are multiple catch blocks, they should not be of generic type
+If there are no exceptions, then catch block will not be executed
+In catch block, the top hierarchy exception -> Exception should be at the last catch block or it should be the only one 
+
+FINALLY 
+This blocks gets executed even if the exception occurs or not
+There is no Finally block without try catch block
+It is not mandatory
+Finally block can also vulnerable to exception
+Finally block will execute even if the try-catch block has return, break or continue
+Finally block will not execute if
+        1. The thread is dead
+        2. When System.exit() is called
+        3. When there is an unrecoverable exception in finally block itself

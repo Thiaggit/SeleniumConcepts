@@ -1,0 +1,21 @@
+STRING
+It is an object that represents sequence of characters
+In Java, String is an immutable object
+String is a class that presents in java.lang.string package
+CharSequence is the main parent interface of string
+CharSequence implements String, StringBuffer and StringBuilder
+
+String can be declared by two ways. 1. String literal 2. String new keyword
+Using string literal we can save memory as new keyword create another new block in heap memory
+
+
+STRINGBUFFER
+StringBuffer is a mutable object
+It is also a child class of Charsequence Interface
+It is Synchronised and does not support multi-threading
+Stringbuffer can be declared by only new keyword
+
+STRINGBUILDER
+StringBuILDER is a mutable object
+It is also a child class of Charsequence Interface
+It is NOT Synchronised and does support multi-threading
