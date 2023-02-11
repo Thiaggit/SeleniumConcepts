@@ -1,0 +1,24 @@
+COLLECTIONS
+
+It is a group of individual objects. 
+Collection is a interface which was implemeneted by List, Set and Queue
+The List interface is implemented by classes such as ArrayList, LinkedList, STack and Vector
+Set interface is implemented by classes such as Hashset, LinkedHashset and Treeset
+
+ArrayList:
+1. ArrayList maintains insertion order and duplicate elements
+2. Null insertion is possible here
+3. It returns -1 if the element is not present
+4. Using List iterator, we traverse both forward and previous
+5. It is non-synchronized and not used in multi threading 
+6. The data structure is resizable array or growable
+7. It can insert heterogeneous elements provided generics not used
+8. Default capacity - 10
+9. Best suited for search ops and performs worst for insertion and deletion
+10. Implements RandomAccess, Serializable and Cloneable
+
+
+LinkedList
+1. Unlike Arraylist, it is not best suited for search operation and RandomAccess
+2. It is useful in insertion and deletion of elements
+3. It also allows insertion order and null elements
