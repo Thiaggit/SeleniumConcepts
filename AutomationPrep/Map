@@ -1,0 +1,32 @@
+MAP
+
+1.Map is a interface which was implemented by HashMap, LinkedHashMap and TreeMap
+2.It is not a child interface of collection 
+3.It represents Key-Value pair
+4.Duplicate keys are not allowed but values are allowed
+
+
+HashMap
+1.Hashmap is a class which implements Map Interface
+2.Duplicate keys are not allowed but values are allowed. If keys are duplicate, then the values will be overridden
+3.Uses Hashing technique to store elements
+4.Only one NULL insertion is allowed. If keys are duplicate null, then the values will be overridden
+5.Insertion order is not maintained
+6.A value of the map is fetched by using its key
+7.Initial capacity - 16
+
+
+LinkedHashMap
+1.The only difference between hashmap and linkedhashmap is it maintains insertion order
+2.Duplicate keys are not allowed but values are allowed. If keys are duplicate, then the values will be overridden
+3.Uses Hashing technique to store elements
+4.Only one NULL insertion is allowed. If keys are duplicate null, then the values will be overridden
+5.A value of the map is fetched by using its key
+6.Initial capacity - 16
+
+
+TreeMap
+1.Treemap is a class which implements Map Interface
+2.Duplicate keys are not allowed but values are allowed. If keys are duplicate, then the values will be overridden 
+3.Null key is not allowed
+4.The elements will be retrieved based on natural sorting order

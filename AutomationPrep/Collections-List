@@ -22,3 +22,41 @@ LinkedList
 1. Unlike Arraylist, it is not best suited for search operation and RandomAccess
 2. It is useful in insertion and deletion of elements
 3. It also allows insertion order and null elements
+
+
+Set
+1. It is one of the child interfaces of Collection
+2. Duplicate values are not allowed
+3. Insertion order is not maintained
+4. It can insert heterogeneous elements (if generics not used)
+
+
+HashSet:
+1. It is one of the implementation class of Set Interface
+2. Duplicate and Insertion order is not allowed
+3. The data structure is hashtable
+4. It can insert heterogeneous elements
+5. Null insertions also allowed
+6. Implements Serializable and cloneable interface
+7. Data are stored based on hashcode, so search is very EFFECTIVE
+8. Default capacity is 16
+
+
+LinkedHashSet:
+1. It maintains insertion order and that is the only difference between hashset and linkedhashset
+2. Duplicate values are not allowed
+3. The data structure is hashtable
+4. It can insert heterogeneous elements(if generics not used)
+5. Null insertions also allowed
+6. Implements Serializable and cloneable interface
+7. Data are stored based on hashcode, so search is very EFFECTIVE
+8. Default capacity is 16
+
+
+TreeSet:
+1. TreeSet implements Sortable and Navigable Interfaces
+2. Duplicate values are not allowed
+3. Elements are retrieved by natural sorting order
+4. The data structure is Binary Search tree
+5. Heterogeneous insertion is not allowed
+
