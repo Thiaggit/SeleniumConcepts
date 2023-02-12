@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Practice" verbose="1" parallel="methods" thread-count="3" >
+  <test name="testNG" >
+    <classes>
+       <class name="testNG.DriveACar"/>     
+       <class name="testNG.ParallelTesting"/>
+       <class name="testNG.SampleClass"/>
+       <class name="testNG.GroupExample"/>
+       <class name = "testNG.ParameterExample"/>
+    </classes>
+  </test> 
+  <listeners>
+  <listener class-name="testNG.SampleClass">
+  </listener>
+  </listeners>
+  <groups>
+       <run>
+           <include name = "First"/>
+           <include name = "second"/>
+           <exclude name = "Third"/>
+       </run>    
+  </groups> 
+  <parameter name="Name" value="Thiagarajan"></parameter> -->
+</suite>
+
+
