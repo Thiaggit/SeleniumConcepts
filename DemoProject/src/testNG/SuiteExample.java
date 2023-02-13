@@ -2,6 +2,7 @@ package testNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -14,8 +15,8 @@ public class SuiteExample {
 	//This annotation is used to perform ops before all the tests executes
 	@BeforeSuite
 	public void LaunchBrowser() {		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Thiagarajan_Loganath\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
-		driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Thiagarajan_Loganath\\\\Project\\\\EdgeDriver\\\\edgedriver_win64\\\\msedgedriver.exe");
+		driver=new EdgeDriver();
 	}
 	
 	@Test(priority=0)

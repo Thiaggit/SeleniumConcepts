@@ -4,14 +4,23 @@
 <suite name="Practice" verbose="1" parallel="methods" thread-count="3" >
   <test name="testNG" >
     <classes>
-       <class name="testNG.DriveACar"/>     
+       <!--<class name="testNG.DriveACar"/>     
        <class name="testNG.ParallelTesting"/>
        <class name="testNG.SampleClass"/>
        <class name="testNG.GroupExample"/>
-       <class name = "testNG.ParameterExample"/>
+       <class name = "testNG.SuiteExample"/>-->
+       <class name="dataDrivenTesting.ParameterExampleDDT"/> 
+       <parameter name="userName1" value="Admin"></parameter>   
+       <parameter name="passWord1" value="Admin"></parameter>  
+       <parameter name="userName2" value="admin1"></parameter>   
+       <parameter name="passWord2" value="admin123"></parameter>  
+       <parameter name="userName3" value="admin1"></parameter>   
+       <parameter name="passWord3" value="admin"></parameter>  
+       <parameter name="userName4" value="Admin"></parameter>   
+       <parameter name="passWord4" value="admin123"></parameter>   
     </classes>
   </test> 
-  <listeners>
+  <!--<listeners>
   <listener class-name="testNG.SampleClass">
   </listener>
   </listeners>

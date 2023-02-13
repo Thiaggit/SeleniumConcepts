@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReport.ExtentReportExample">
+      <class name="dataDrivenTesting.DataProviderExample">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="OpenYahoo"/>
-          <include name="OpenBing"/>
-          <include name="OpenGoogle"/>
-          <include name="LaunchBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="EnteringDetails"/>
         </methods>
-      </class> <!-- extentReport.ExtentReportExample -->
+      </class> <!-- dataDrivenTesting.DataProviderExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
