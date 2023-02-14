@@ -35,7 +35,7 @@ public class LinkedHashSetExample {
 		
 	    java.util.Iterator<String> ite = set1.iterator();
 	    while(ite.hasNext()) {
-	    	System.out.println(ite);
+	    	System.out.println(ite.next());
 	    }
 	    
      }

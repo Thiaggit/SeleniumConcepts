@@ -3,7 +3,7 @@ It is an object that represents sequence of characters
 In Java, String is an immutable object
 String is a class that presents in java.lang.string package
 CharSequence is the main parent interface of string
-CharSequence implements String, StringBuffer and StringBuilder
+CharSequence interface was implemented by String, StringBuffer and StringBuilder
 
 String can be declared by two ways. 1. String literal 2. String new keyword
 Using string literal we can save memory as new keyword create another new block in heap memory
