@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Practice" verbose="1" parallel="methods" thread-count="3" >
+  <test name="testNG" >
+    <classes>
+ 
+       <class name = "testCases.LoginTestCases"/>
+       <class name="testCases.PythonTestCases"/> 
+          
+    </classes>
+  </test> 
+</suite>
+
+

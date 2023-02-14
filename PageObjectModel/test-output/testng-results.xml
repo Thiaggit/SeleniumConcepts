@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-15T00:35:44 IST" name="Practice" finished-at="2023-02-15T00:35:47 IST" duration-ms="2850">
+    <groups>
+    </groups>
+    <test started-at="2023-02-15T00:35:44 IST" name="testNG" finished-at="2023-02-15T00:35:47 IST" duration-ms="2850">
+      <class name="testCases.LoginTestCases">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.LoginTestCases@661972b0]" started-at="2023-02-15T00:35:31 IST" name="beforeSuite" finished-at="2023-02-15T00:35:38 IST" duration-ms="7024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="LoginTestcase()[pri:0, instance:testCases.LoginTestCases@661972b0]" started-at="2023-02-15T00:35:44 IST" name="LoginTestcase" finished-at="2023-02-15T00:35:44 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestcase -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.LoginTestCases@661972b0]" started-at="2023-02-15T00:35:47 IST" name="afterSuite" finished-at="2023-02-15T00:35:47 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.PythonTestCases">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCases.PythonTestCases@4f18837a]" started-at="2023-02-15T00:35:38 IST" name="beforeSuite" finished-at="2023-02-15T00:35:44 IST" duration-ms="5911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="PythonEnrollment()[pri:0, instance:testCases.PythonTestCases@4f18837a]" started-at="2023-02-15T00:35:44 IST" name="PythonEnrollment" finished-at="2023-02-15T00:35:47 IST" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PythonEnrollment -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCases.PythonTestCases@4f18837a]" started-at="2023-02-15T00:35:47 IST" name="afterSuite" finished-at="2023-02-15T00:35:47 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCases.PythonTestCases -->
+    </test> <!-- testNG -->
+  </suite> <!-- Practice -->
+</testng-results>
