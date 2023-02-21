@@ -1,0 +1,361 @@
+{
+	"info": {
+		"_postman_id": "2ddc0fb7-416a-4f2b-bdb7-17258b1e1934",
+		"name": "General Postman Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DataFromJSON",
+			"item": [
+				{
+					"name": "ToGetAllJSONData",
+					"_postman_id": "5d7e58d6-dd8f-423c-bbcb-44deaea9edde",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"{{first_name}}\",\r\n    \"last_name\": \"{{last_name}}\",\r\n    \"email\": \"{{email}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/employees"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "80a2b1c0-9c4a-454d-bdd9-511d53a07490"
+		},
+		{
+			"name": "DataFromCSV",
+			"item": [
+				{
+					"name": "ToGetAllCSVData",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46b5400c-6552-4f0c-890c-309813a2e7f0",
+								"exec": [
+									"pm.test(\"Check status is 201\", function(){\r",
+									"    pm.response.to.have.status(201)\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Check first name is present\", function(){\r",
+									"    pm.expect(pm.response.text()).to.include(pm.iterationData.get(\"first_name\"))\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Verify email ID is available\", function(){\r",
+									"    pm.expect(pm.response.text()).to.include(pm.iterationData.get(\"email\"))\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "9e6ce480-cdaa-48a7-9c20-b29f5319538e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"{{first_name}}\",\r\n    \"last_name\": \"{{last_name}}\",\r\n    \"email\": \"{{email}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/employees"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "8ba4c8af-e5b8-4dcf-8300-db18cdd6eda4"
+		},
+		{
+			"name": "ScriptExecutionOrder",
+			"item": [
+				{
+					"name": "Google",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6e699a70-3ce5-4285-a08c-43da578370f3",
+								"exec": [
+									"console.log(\"Before Google\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "af5f7e73-6b60-479c-a557-e7b4fc397e60",
+								"exec": [
+									"console.log(\"After Google\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "f3dc5d7f-93b8-4a07-923e-53ff47944d5c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://google.co.in/"
+					},
+					"response": []
+				},
+				{
+					"name": "Yahoo",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "42ff3b29-2957-4289-8ff8-fcd5cfca36c0",
+								"exec": [
+									"console.log(\"Before Yahoo\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "7001be81-5d6e-4006-b1a0-19c8819bc3cf",
+								"exec": [
+									"console.log(\"After Yahoo\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "340a8f1b-b4fc-4de3-b869-660cc15902b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://yahoo.co.in/"
+					},
+					"response": []
+				},
+				{
+					"name": "Bing",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "432c24ca-93b9-4760-92f3-848ac3f3b96e",
+								"exec": [
+									"console.log(\"Before Bing\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2b85069b-5194-494c-b1a1-679d3d640222",
+								"exec": [
+									"console.log(\"After Bing\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "7dd05e91-99de-42c5-a6ef-9c8a7f82cbc9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://bing.co.in/"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "98c82cfd-5376-4cc1-81dc-e4f9e84e7711",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9d0708ae-3905-41fa-98da-cedbc19426c5",
+						"type": "text/javascript",
+						"exec": [
+							"console.log(\"Before Folder\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae694c94-63c7-4d9c-b412-a8b1234a4601",
+						"type": "text/javascript",
+						"exec": [
+							"console.log(\"After Folder\")"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "RequestChaining",
+			"item": [
+				{
+					"name": "To insert a new resource Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "63de6897-523d-4ed7-bc15-f4bc3a810960",
+								"exec": [
+									"var jsonResponse = pm.response.json()\r",
+									"var id = jsonResponse.id\r",
+									"pm.collectionVariables.set(\"employeeID\", id);\r",
+									"console.log(id)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "b8c03333-4c3d-417c-a01c-d805661cbf43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Lisandro\",\r\n    \"last_name\": \"Martinez\",\r\n    \"email\": \"Licha@abc.com\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/employees",
+						"description": "This request will add a new user "
+					},
+					"response": []
+				},
+				{
+					"name": "To get all the resources Copy",
+					"_postman_id": "276354de-eac5-4f06-9442-3b1963c3173c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/employees/{{employeeID}}",
+						"description": "This request retreives all the available users"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "16d0e075-469a-47a3-9d94-12b5f19f2c5a"
+		},
+		{
+			"name": "To get all the resources",
+			"_postman_id": "91d084a8-2bc7-4f1b-8542-323637131ed0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/employees/",
+				"description": "This request retreives all the available users"
+			},
+			"response": []
+		},
+		{
+			"name": "To insert a new resource",
+			"_postman_id": "1d7d0cb9-3ea3-42d0-961a-3a848595cd7f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": 4,\r\n    \"first_name\": \"Thiagarajan\",\r\n    \"last_name\": \"Loganathan\",\r\n    \"email\": \"thiagarajan.loganathan@abc.com\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/employees",
+				"description": "This request will add a new user "
+			},
+			"response": []
+		},
+		{
+			"name": "To edit a resource",
+			"_postman_id": "deddc014-f46a-43e2-85f8-65e0617b0423",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"first_name\": \"Thiagarajan\",\r\n    \"last_name\": \"Loganathan\",\r\n    \"email\": \"thiagarajan.loganathan@xyz.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/employees/4",
+				"description": "This request will edit the existing resource"
+			},
+			"response": []
+		},
+		{
+			"name": "To delete a resource",
+			"_postman_id": "c62f6b6e-0b28-414e-b15e-f428523ded12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/employees/3",
+				"description": "This request is used to delete the resource     "
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "02d5db57-e42e-4ad0-808a-0ac4366ac6a6",
+			"key": "employeeID",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
