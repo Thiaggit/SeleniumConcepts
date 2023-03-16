@@ -37,6 +37,7 @@ public class ApachePOIExample {
 				}else {
 					password.add(columniterator.next().getStringCellValue());
 				}
+				i++;
 			}
 		}
 	}
