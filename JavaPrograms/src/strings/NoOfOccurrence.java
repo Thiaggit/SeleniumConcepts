@@ -7,7 +7,7 @@ public class NoOfOccurrence {
 	NoOfOccurrence(){
 		String given = "Thiagarajan";
 		
-		char toFind = 'a';
+		char toFind = 't';
 		
 		int occurrence=0;
 		
