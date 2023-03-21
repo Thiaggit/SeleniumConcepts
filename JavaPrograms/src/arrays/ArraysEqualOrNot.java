@@ -33,7 +33,7 @@ public class ArraysEqualOrNot {
 				}
 			}
 		}else {
-			result = false;
+			result = true;
 		}
 		if(result==true) {
 			System.out.println("The arrays are equal");
