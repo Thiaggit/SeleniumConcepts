@@ -5,18 +5,19 @@ public class ElementPresentorNot {
 	public void findTheElementPresentOrNot() {
 		int given[]= {1,56,87,56,86};
 		
-		int toFind=6;
+		int toFind=1;
 		
-		Boolean result=false;
+		Boolean result=true;
 		
 		for (int i : given) {
 			if(i==toFind) {
 				result=true;
+				break;
 			}else {
 				result=false;
 			}
 		}
-		System.out.println("The element availability is " + result);;
+		System.out.println("The element availability is " + result);
 	
 	}
 	public static void main(String[] args) {

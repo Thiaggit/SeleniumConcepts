@@ -26,19 +26,19 @@ public class ArraysEqualOrNot {
 		
 		boolean result = true;
 	
-		if(a1.length == a2.length) {
+		if(a1.length==a2.length) {
 			for(int i=0;i<a1.length;i++) {
 				if(a1[i]!=a2[i]) {
-					result = false;
+					result=false;
 				}
 			}
 		}else {
-			result = true;
+			result = false;
 		}
 		if(result==true) {
 			System.out.println("The arrays are equal");
 		}
-		else{
+		else {
 			System.out.println("The arrays are not equal");
 		}
 	}
