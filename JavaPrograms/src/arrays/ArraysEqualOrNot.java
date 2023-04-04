@@ -22,7 +22,7 @@ public class ArraysEqualOrNot {
 	//Method2
 	public void UsingOwnLogic() {
 		int a1[] = {1,2,3,4,5};
-		int a2[] = {1,2,3};
+		int a2[] = {1,2,3,4,5};
 		
 		boolean result = true;
 	
@@ -33,7 +33,7 @@ public class ArraysEqualOrNot {
 				}
 			}
 		}else {
-			result = false;
+			result = true;
 		}
 		if(result==true) {
 			System.out.println("The arrays are equal");

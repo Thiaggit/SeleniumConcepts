@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-01T17:18:10 IST" name="Default suite" finished-at="2023-04-01T17:18:11 IST" duration-ms="415">
+    <groups>
+    </groups>
+    <test started-at="2023-04-01T17:18:10 IST" name="Default test" finished-at="2023-04-01T17:18:11 IST" duration-ms="415">
+      <class name="jsonschemavalidation.JsonSchemaValidationUsingHamcrest">
+        <test-method signature="JsonSchemaValidatorwithHamcrest()[pri:0, instance:jsonschemavalidation.JsonSchemaValidationUsingHamcrest@6f96c77]" started-at="2023-04-01T17:18:10 IST" name="JsonSchemaValidatorwithHamcrest" finished-at="2023-04-01T17:18:11 IST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsonSchemaValidatorwithHamcrest -->
+      </class> <!-- jsonschemavalidation.JsonSchemaValidationUsingHamcrest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
